@@ -15,6 +15,7 @@ from pyxenoverse.bsa.types.screen_effect import ScreenEffect
 from pyxenoverse.bsa.types.type10 import Type10
 from pyxenoverse.bsa.types.type12 import Type12
 from pyxenoverse.bsa.types.type13 import Type13
+from pyxenoverse.bsa.types.type14 import Type14
 ITEM_TYPES = {
     -2: Collision,
     -1: Expiration,
@@ -29,7 +30,8 @@ ITEM_TYPES = {
     8: ScreenEffect,
     10: Type10,
     12: Type12,
-    13: Type13
+    13: Type13,
+    14: Type14,
 }
 
 BSASubEntry = recordclass('BSASubEntry', [
