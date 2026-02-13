@@ -80,6 +80,7 @@ FUNCTION_MAPPINGS = {
     0x59: ('Untarget Opponent', None, None, None, None, None),
 
     0x5f: ('Auto-dodge', 'Stamina cost', 'HP Condition %', None, None, None),
+    0x65: ('Enable Ultra Instinct BAC', 'Stamina cost', 'Unknown', 'CUS Aura ID')
 
 
 }
