@@ -46,6 +46,9 @@ class Animation(BaseType):
         0x2a: "MCM.TTL.ean",
         0x2b: "MCM.TU6.ean",
         0x5e: "MCM.TU13.5.ean",
+        0x5f: "Unknown (0x5F)",
+        0x61: "Unknown (0x61)",
+        0x62: "Unknown (0x62)",
         0xfffe: "Skill Ean"
     }
 
