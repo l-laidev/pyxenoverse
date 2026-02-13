@@ -121,7 +121,7 @@ class ScreenEffect(BaseType):
         116: "Light Green Hue [130]",
         117: "Flashing Green Hue [350]",
         118: "Saturated Light Purple Hue [250]",
-        119: "Saturated Green Hue [130]",
+        119: "Saturated Yellow Hue [130]",
         120: "Darken Background 1 [100]",
         121: "Darken Background 2 [560]",
         122: "Darken Background 3 [560]",
@@ -185,6 +185,7 @@ class ScreenEffect(BaseType):
         256: "White Flash [29]",
         257: "White Body Outline 1 [60]",
         260: "White Body Outline 2 [30]",
+        309: "Impact Frame",
     }
 
     def __init__(self, index):
