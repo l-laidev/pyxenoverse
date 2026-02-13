@@ -49,7 +49,7 @@ BCMEntry = recordclass('BCMEntry', [
     'u_68',
     'u_6a',
     'u_6c',
-])
+], mapping=True)
 BCM_ENTRY_SIZE = 112
 BCM_ENTRY_BYTE_ORDER = 'IIIIIhhIIHHHHHHHHIIIIIIIIIIIIfh' \
                        'hHHI'
@@ -98,7 +98,7 @@ class BCM:
         f.seek(self.header.data_start)
         for idx, entry in enumerate(self.entries):
             f.seek(entry.address if idx != 0 else self.header.data_start)
-            f.write(struct.pack(endian + BCM_ENTRY_BYTE_ORDER, *entry[1:]))
+            f.write(struct.pack(endian + BCM_ENTRY_BYTE_ORDER, *tuple(entry)[1:]))
 
 
 def index_to_address(index):
