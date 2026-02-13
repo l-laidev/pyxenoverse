@@ -40,7 +40,8 @@ class ThrowHandler(BaseType):
     def read(self, f, endian, type17_small):
         self.data = self.bac_record(*struct.unpack(endian + self.byte_order, f.read(self.size)), 0.0, 0.0, 0.0)
         if not type17_small:
-            self.data[10:] = struct.unpack(endian + 'fff', f.read(self.displacement_size))
+            # victim_displacement_*
+            (self.data[10], self.data[11], self.data[12]) = struct.unpack(endian + 'fff', f.read(self.displacement_size))
 
     def write(self, f, endian):
         f.write(struct.pack(endian + self.byte_order + 'fff', *self.data))
