@@ -7,7 +7,8 @@ BACPhysics = recordclass('BACPhysics', [
     'duration',
     'u_04',
     'character_type',
-    'function_type',
+    'function_type_A',
+    'function_type_B',
     'ean_index',
     'u_10',
     'f_14',
@@ -20,10 +21,10 @@ BACPhysics = recordclass('BACPhysics', [
 class Physics(BaseType):
     type = 18
     bac_record = BACPhysics
-    byte_order = 'HHHHIIIffI'
+    byte_order = 'HHHHHHIIffI'
     size = 32
 
-    description_type = "function_type"
+    description_type = "function_type_A"
     description = {
         0x1: "Simulate Physics",
         0x2: "Unknown",
