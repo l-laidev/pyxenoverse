@@ -18,7 +18,7 @@ BACSystem = recordclass('BACSystem', [
 
 FUNCTION_MAPPINGS = {
     0x0: ('Loop', None, None, None, None, None),
-    0x2: ('Damage', 'Damage', None, None, None, None),
+    0x2: ('Damage', 'Damage', None, 'Unknown', None, None),
     0x4: ('Give/take Ki', 'Ki', None, None, None, None),
     0x6: ('Invisibility', None, None, None, None, None),
     0x7: ('Rotate animation', 'Y-axis Degrees', None, None, None, None),
