@@ -43,7 +43,7 @@ class Effect(BaseType):
         0x7: "Evasive",
         0x8: "Unknown (0x8)",
         0x9: "Ki blast",
-        0xa: "Unknown (0xa)",
+        0xa: "Z-assist? (0xa)",
         0xb: "Stage (0xb)",
         0xc: "Awoken"
     }
